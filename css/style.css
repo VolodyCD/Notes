@@ -19,12 +19,11 @@ body{
 display: flex;
 flex-direction: column;
 align-items: center;
+
 gap: 20px;
 }
 
 .title {
-   
-   left: 0;
    color: rgba(77, 73, 73, 0.766);
    
 }
@@ -43,24 +42,31 @@ gap: 20px;
 
 
 .button{
-   max-width: 200px;
-padding: 10px 40px;
-border: none;
+   padding: 10px 200px;
+   border: 2px solid rgb(20, 205, 140);
    border-radius: 30px;
    font-size: 16px;
    cursor: pointer;
    font-weight: bold;
+   background-color: transparent;
+}
+
+.button:hover{
+   background-color: rgba(127, 255, 212, 0.636);
 }
 
 .list {
+   display: flex;
+   flex-direction: column;
    border-radius: 20px;
    max-width: 500px;
    font-size: 20px;
+   gap: 10px;
+
 }
 
 .list li {
    display: flex;
-   gap: 10px;
    list-style: none;
    width: 500px;
    min-height: 60px;
@@ -85,9 +91,20 @@ li {
    right: 0;
    margin-right: 60px;
    cursor: pointer;
+   font-weight: bold;
+
+}
+
+.go:hover{
+   background-color: rgb(58, 160, 27);
+
 }
 .bag{
    background-color: rgb(238, 255, 47);
+}
+
+.bag:hover{
+   background-color: rgb(159, 170, 39);
 
 }
 
@@ -100,6 +117,12 @@ li {
    position: absolute;
    right: 0;
    cursor: pointer;
+   font-weight: bold;
+}
+
+.not:hover{
+   background-color: rgb(177, 9, 9);
+
 }
 
 .text-decoration {
@@ -109,4 +132,10 @@ li {
 .name{
    padding-left: 10px;
    font-size: 24px;
+}
+
+.para {
+   font-size: 24px;
+   font-weight: bold;
+  
 }
